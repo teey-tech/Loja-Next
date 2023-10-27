@@ -34,8 +34,8 @@ public class MarcaController {
   }
 
   @PutMapping("/")
-  public Marca atualizar(@RequestBody Marca marca) {
-    return service.atualizar(marca);
+  public Marca alterar(@RequestBody Marca marca) {
+    return service.alterar(marca);
   }
 
   @DeleteMapping("/{id}")

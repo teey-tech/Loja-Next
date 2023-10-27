@@ -33,7 +33,7 @@ public class EstadoService {
     return repository.saveAndFlush(estado);
   }
 
-  public void excluir(Long id) {
+  public void deletar(Long id) {
     Optional<Estado> estadoEncontrado = repository.findById(id);
     repository.delete(estadoEncontrado.get());
   }
